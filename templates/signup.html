@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{%block title%}
+  Signup Page
+{%endblock%}
+
+{%block contant%}
+      <div class="container mt-5">
+              <h2 class="text-center">Sign Up</h2>
+              <form>
+                  <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="contact">Contact Number:</label>
+                      <input type="tel" class="form-control" id="contact" placeholder="Enter your contact number" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="password">Password:</label>
+                      <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="confirmPassword">Confirm Password:</label>
+                      <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                  </div>
+                  <a class="btn btn-primary" href="{{url_for('loginpage')}}"><span class="fas fa-user"></span> Sign Up</a>
+              </form>
+          </div>
+{%endblock%}
